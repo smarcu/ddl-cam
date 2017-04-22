@@ -23,7 +23,7 @@ def led( state ):
 def takePicture():
 	imgName  = "ddcam-" + time.strftime("%Y%m%d-%H%M%S") + ".jpg"
 	print "Take Picture! ", imgName
-	subprocess.call(["raspistill" "-t" "1" "-w" "800" "-h" "600" "-o" imgName])
+	subprocess.call(["raspistill", "-t", "1", "-w", "800", "-h", "600", "-o", imgName])
 
 # monitor button
 while True:
