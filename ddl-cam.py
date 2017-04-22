@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import subprocess
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -20,8 +21,9 @@ def led( state ):
 		GPIO.output(LED_PIN, GPIO.LOW)
 
 def takePicture():
-	print "Take Picture!"
-
+	imgName  = "ddcam-" + time.strftime("%Y%m%d-%H%M%S") + ".jpg"
+	print "Take Picture! ", imgName
+	subprocess.call(["raspistill" "-t" "1" "-w" "800" "-h" "600" "-o" imgName])
 
 # monitor button
 while True:
