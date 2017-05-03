@@ -3,12 +3,12 @@
 
 A simple DIY camera using Raspberry Pi.
 
-##Raspberry Pi Pinout
+## Raspberry Pi Pinout
  * pinout [https://pinout.xyz/](https://pinout.xyz/)
  * in this project using pin GND, BCM 18, BCM 17
 
 ## Hardware
-###LED connection
+### LED connection
  * using pin (GND and BCM 18)
  * GND: [https://pinout.xyz/pinout/ground](https://pinout.xyz/pinout/ground)
  * BCM 18: [https://pinout.xyz/pinout/pin12_gpio18](https://pinout.xyz/pinout/pin12_gpio18)
@@ -16,14 +16,14 @@ A simple DIY camera using Raspberry Pi.
 
  ```python led.py to test led```
 
-###Button connection
+### Button connection
  * using pin (GND and BCM 17)
  * GND: [https://pinout.xyz/pinout/ground](https://pinout.xyz/pinout/ground)
  * BCM 17: [https://pinout.xyz/pinout/pin11_gpio17](https://pinout.xyz/pinout/pin11_gpio17)
 - run: python button.py 
 
 ## Software
-###Take a picture
+### Take a picture
  * Take a picture into the current folder (resolution 800x600)
 
  ```raspistill -t 1 -w 800 -h 600 -o {imgName}```
