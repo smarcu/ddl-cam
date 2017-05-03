@@ -20,7 +20,9 @@ A simple DIY camera using Raspberry Pi.
  * using pin (GND and BCM 17)
  * GND: [https://pinout.xyz/pinout/ground](https://pinout.xyz/pinout/ground)
  * BCM 17: [https://pinout.xyz/pinout/pin11_gpio17](https://pinout.xyz/pinout/pin11_gpio17)
-- run: python button.py 
+ * Test button:
+
+ ```python button.py``` 
 
 ## Software
 ### Take a picture
